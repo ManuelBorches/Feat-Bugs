@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const { Order, Tool, User } = require('../models/index');
 
+//Manuel es un capo
 
 router.get("/:toolId", (req, res) => {
   Order.findAll({

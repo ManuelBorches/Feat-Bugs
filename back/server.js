@@ -59,29 +59,19 @@ passport.use(
   );
 
 
-  // How we save the user
+// How we save the user
 passport.serializeUser(function(user, done) {
     done(null, user.id);
   });
-  // How we look for the user
+// How we look for the user
 passport.deserializeUser(function(id, done) {
     User.findByPk(id)
     .then(user => done(null, user))
 });
 
 
-
-
-//app.use('/api', require("./routes/index"));
-
-// esto conecta el front con el back
-/* app.use('/*', function (req, res) {
-  res.redirect("/api");
-    //res.sendFile(__dirname+"/public/index.html");
-}); */
-
 app.use('/api', apiRoutes);
 app.use('/*', (_req, res) => res.redirect('/api'));
 
 
-db.sync({force: false}).then(() => app.listen(8000, () => console.log('escuchando en puerto 8000')))
+db.sync({force: false}).then(() => app.listen(8000, () => console.log('listening on port 3000')))

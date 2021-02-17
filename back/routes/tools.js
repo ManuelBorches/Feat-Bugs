@@ -1,12 +1,6 @@
 const router = require('express').Router();
 const { Tool } = require("../models/index");
 
-/* router.get("/", (req, res) => {
-  Tool.findAll({
-    order: [["id", "ASC"]],
-  }).then((tools) => res.send(tools));
-}); */
-
 router.get("/", (req, res) => {
   Tool.findAll().then(tools => res.send(tools));
 });

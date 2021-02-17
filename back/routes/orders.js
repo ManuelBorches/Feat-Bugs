@@ -36,7 +36,7 @@ router.post("/:id", (req, res) => {
       })
 })
 
-// ruta para editar el status de una orden
+// edit order status
 router.put("/edit", (req, res) => {
     Order.update(
       { status: req.body.status },
@@ -47,7 +47,7 @@ router.put("/edit", (req, res) => {
 });
 
 
-// ruta para editar qVotes de un usuario a una orden
+// edit qVotes user-order
 router.put("/vote", (req, res) => {
   Order.update(
     { qVotes: req.body.qVotes + 1 },

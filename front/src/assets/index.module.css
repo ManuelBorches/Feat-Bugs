@@ -1,0 +1,167 @@
+.home_background {
+  width: 100%;
+  min-height: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://www.learnetic.com/wp-content/uploads/2016/10/mA-Orange-1-blurred-background-10-2000x1250.jpg");
+  /* background-image: url("https://s27389.pcdn.co/wp-content/uploads/2017/05/AdobeStock_51875542.jpeg"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.home_background h1 {
+  font-size: 3rem;
+  color: white;
+  background-color: #242424;
+  height: 100px;
+  line-height: 100px;
+  width: 650px;
+  text-align: center;
+  border-radius: 3rem;
+  box-shadow: 5px 5px 12px 1px white;
+}
+
+.my_logo {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  height: 50px;
+  align-items: center;
+  box-shadow: 1px 1px 2px 1px white;
+}
+.my_logo:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #242424;
+}
+
+.tools {
+  text-decoration: none;
+  color: #535353;
+}
+.tools:hover {
+  color: #242424;
+}
+
+.orders_container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.column_container_1,
+.column_container_2,
+.column_container_3 {
+  color: white;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 1rem;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  background-color: rgba(56, 56, 227, 0.94);
+}
+.column_container_2 {
+  background-color: rgb(220, 223, 4);
+  color: black;
+}
+.column_container_3 {
+  background-color: rgb(84, 170, 35);
+}
+
+.column_container_1 h1,
+.column_container_2 h1,
+.column_container_3 h1 {
+  margin: 0;
+  border-radius: 3rem;
+  height: 6rem;
+  line-height: 6rem;
+  background-color: rgb(9, 9, 162);
+}
+.column_container_2 h1 {
+  background-color: rgb(251, 255, 0);
+}
+.column_container_3 h1 {
+  background-color: rgb(50, 138, 0);
+}
+
+.add_order_icon {
+  margin: 5px 5px -6px 18px;
+  color: black;
+}
+.add_order_icon:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.order_item {
+  margin-top: 0.5rem;
+  border-radius: 1rem;
+  border-bottom: 2px solid black;
+}
+
+.order_item_header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 50px;
+}
+.order_item_header h3 {
+  margin: 0.2rem 0.9rem;
+}
+.order_item_header h5 {
+  margin: 0 1rem;
+  text-align: left;
+}
+
+.title_type {
+  display: flex;
+  flex-direction: column;
+}
+
+.votes {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
+  width: 150px;
+  line-height: 50px;
+}
+
+.image_description {
+  display: flex;
+  flex-direction: row;
+}
+
+.image {
+  width: 25%;
+  height: 100px;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  margin: 0.2rem 1rem;
+}
+.image img {
+  width: 100px;
+  height: 100px;
+}
+
+.image img {
+  object-fit: contain;
+}
+
+.interactions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.align {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+}

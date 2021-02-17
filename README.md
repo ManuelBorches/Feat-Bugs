@@ -1,6 +1,6 @@
 # Feat-Bugs 
 
-## API RESTful React-Redux Hooks Node.js Express.js Sequelize 
+## React-Redux Hooks Node.js Express.js Sequelize 
 
 ### cd front run npm start
 
